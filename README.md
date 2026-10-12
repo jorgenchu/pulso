@@ -174,3 +174,7 @@ Memoria: unos 21 MB de huella.
 - El espacio "disponible" de Finder incluye el purgable, y calcularlo es caro (CacheDelete
   recorre todos los volúmenes). Se recalcula cada 5 minutos; los bloques libres, cada 30 s.
 - Los cambios de red llegan por notificación de `SCDynamicStore`, no por sondeo.
+
+## Licencia
+
+[MIT](LICENSE).
