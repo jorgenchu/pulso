@@ -1,0 +1,43 @@
+PULSO
+Monitor del sistema para la barra de menús de macOS.
+Requiere un Mac con Apple Silicon y macOS 14 o posterior.
+
+INSTALAR
+
+1. Arrastra Pulso a la carpeta Applications.
+2. Abre Pulso desde Aplicaciones.
+
+Pulso no está notarizado por Apple, así que la primera vez macOS avisa de que
+no puede verificarlo y no lo abre. Para permitirlo:
+
+   Ajustes del Sistema > Privacidad y seguridad > baja hasta el aviso sobre
+   Pulso > "Abrir igualmente".
+
+O, desde Terminal:
+
+   xattr -dr com.apple.quarantine /Applications/Pulso.app
+
+Solo hay que hacerlo una vez.
+
+USAR
+
+Pulso no tiene icono en el Dock: vive en la barra de menús.
+- Clic en un elemento: abre su panel.
+- Clic derecho: Ajustes y Salir.
+- Tecla Comando + arrastrar: reordena los elementos.
+
+Si no ves los elementos, la barra de menús está llena: cierra otros iconos o
+mira tras el desplegable ">>".
+
+CONTROL DE VENTILADORES (opcional)
+
+Cambiar la velocidad de los ventiladores necesita un servicio con permisos de
+administrador. Se instala una vez, desde Terminal:
+
+   sudo /Applications/Pulso.app/Contents/Resources/install-fan-helper.sh
+
+Después, en Ajustes > Paneles > Detalle elige "Avanzado" y abre el panel de
+Sensores.
+
+Instrucciones completas, código y desinstalación:
+https://github.com/jorgenchu/pulso
